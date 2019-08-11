@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+
+   <name>SpatialDB</name>
+
+  <Style id="point">
+  <IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+  </Style>
+
+  <Style id="polygon">
+   <PolyStyle>
+    <color>#a00000ff</color>
+   <outline>0</outline>
+   </PolyStyle>
+  </Style>
+
+  <Style id="line">
+      <LineStyle>
+          <width>3</width>
+          <color>#ff00ffff</color>
+      </LineStyle>
+  </Style>
+
+  <Placemark>
+    <name>Home</name>
+    <Point>
+      <coordinates>-118.280246,34.026349</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Shrine Hall</name>
+    <Point>
+      <coordinates>-118.2816920,34.0238086</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Powell Hall</name>
+    <Point>
+      <coordinates>-118.2888065,34.0191597</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Tommy Trojan</name>
+    <Point>
+      <coordinates>-118.2854468,34.0205619</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Bridge Hall</name>
+    <Point>
+      <coordinates>-118.2857381,34.0188316</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>SGM 123</name>
+    <Point>
+      <coordinates>-118.2891709,34.021160099</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Taper Hall</name>
+    <Point>
+      <coordinates>-118.2845601,34.0222729</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Lyon Center</name>
+    <Point>
+      <coordinates>-118.2884284,34.0244047</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Expo/Vermo</name>
+    <Point>
+      <coordinates>-118.291428,34.018398</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Vermo/Jeff</name>
+    <Point>
+      <coordinates>-118.291417,34.025389</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Jeff/Figuer</name>
+    <Point>
+      <coordinates>-118.280224,34.021853</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <name>Figuer/Expo</name>
+    <Point>
+      <coordinates>-118.282419,34.018462</coordinates>
+    </Point>
+    <styleUrl>#point</styleUrl>
+  </Placemark>
+
+  <!-- Plotting Polygon (ConvexHull) -->
+
+  <Placemark>
+  <!--- ConvexHull = POLYGON((-118.291428 34.018398,-118.291417 34.025389,-118.280246 34.026349,-118.280224 34.021853,-118.282419 34.018462,-118.291428 34.018398)) -->
+  <Polygon> <outerBoundaryIs>  <LinearRing>
+    <coordinates>
+      -118.291428,34.018398
+      -118.291417,34.025389
+      -118.280246,34.026349
+      -118.280224,34.021853
+      -118.282419,34.018462
+      -118.291428,34.018398
+    </coordinates>
+   </LinearRing> </outerBoundaryIs> </Polygon>
+   <styleUrl>#polygon</styleUrl>
+  </Placemark>
+
+  <!-- Plotting Nearest Neighbours -->
+
+  <Placemark>
+    <LineString>
+      <coordinates>-118.280246,34.026349  -118.281692,34.0238086</coordinates>
+    </LineString>
+    <styleUrl>#line</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <LineString>
+      <coordinates>-118.280246,34.026349  -118.280224,34.021853</coordinates>
+    </LineString>
+    <styleUrl>#line</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <LineString>
+      <coordinates>-118.280246,34.026349  -118.2845601,34.0222729</coordinates>
+    </LineString>
+    <styleUrl>#line</styleUrl>
+  </Placemark>
+
+  <Placemark>
+    <LineString>
+      <coordinates>-118.280246,34.026349  -118.2854468,34.0205619</coordinates>
+    </LineString>
+    <styleUrl>#line</styleUrl>
+  </Placemark>
+
+</Document></kml>
